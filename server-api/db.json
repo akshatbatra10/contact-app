@@ -1,18 +1,13 @@
 {
   "contacts": [
     {
-      "id": "ac3494ee-7845-43f3-bfc8-ec74e0ce95d9",
-      "name": "Akshat",
-      "email": "akshatbatra10@gmail.com"
-    },
-    {
       "id": "f6131751-ec52-43b9-b35f-428c3a36fdf2",
       "name": "Mystic",
       "email": "akshat.00614802719@cse.mait.ac.in"
     },
     {
       "id": "8109f610-2dc8-4415-97ff-1e41206dae06",
-      "name": "Disha",
+      "name": "Disha B",
       "email": "disha2.bhardwaj@gmail.com"
     }
   ]
