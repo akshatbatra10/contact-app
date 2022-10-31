@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Header.component";
 import AddContact from "./AddContact.component";
 import ContactList from "./ContactList.component";
+import ContactDetails from "./ContactDetails.component";
 
 import "./App.css";
 
@@ -56,6 +57,7 @@ function App() {
               />
             }
           />
+          <Route exact path='/contact/:id' element={<ContactDetails />} />
         </Routes>
         {/* <AddContact addContactHandler={addContactHandler} /> */}
         {/* <ContactList contacts={contacts} getContactID={removeContactHandler} /> */}
