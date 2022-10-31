@@ -59,8 +59,6 @@ function App() {
           />
           <Route exact path='/contact/:id' element={<ContactDetails />} />
         </Routes>
-        {/* <AddContact addContactHandler={addContactHandler} /> */}
-        {/* <ContactList contacts={contacts} getContactID={removeContactHandler} /> */}
       </Router>
     </div>
   );
