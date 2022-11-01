@@ -13,9 +13,9 @@ import "./App.css";
 
 function App() {
   const LOCAL_STORAGE_KEY = "contacts";
-  const [contacts, setContacts] = useState(
-    JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) ?? []
-  );
+  const [contacts, setContacts] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
 
   const retriveContacts = async () => {
     const response = await api.get("/contacts");
@@ -49,6 +49,21 @@ function App() {
     setContacts(newContactList);
   };
 
+  const searchHandler = (search) => {
+    setSearchTerm(search);
+    if (search !== "") {
+      const newContactList = contacts.filter((contact) => {
+        return Object.values(contact)
+          .join(" ")
+          .toLowerCase()
+          .includes(search.toLowerCase());
+      });
+      setSearchResults(newContactList);
+    } else {
+      setSearchResults(contacts);
+    }
+  };
+
   useEffect(() => {
     // const retrivedContacts = JSON.parse(
     //   localStorage.getItem(LOCAL_STORAGE_KEY)
@@ -79,8 +94,10 @@ function App() {
             path='/'
             element={
               <ContactList
-                contacts={contacts}
+                contacts={searchTerm.length === 0 ? contacts : searchResults}
                 getContactID={removeContactHandler}
+                term={searchTerm}
+                searchKeyword={searchHandler}
               />
             }
           />

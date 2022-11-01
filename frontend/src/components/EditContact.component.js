@@ -20,7 +20,7 @@ const EditContact = (props) => {
     navigate("/");
   };
   return (
-    <div className='ui main' style={{ marginTop: "3.5em" }}>
+    <div className='ui main' style={{ marginTop: "5.5em" }}>
       <h2>Add Contact</h2>
       <form className='ui form' onSubmit={update}>
         <div className='field'>

@@ -1,14 +1,19 @@
 {
   "contacts": [
     {
-      "id": "f6131751-ec52-43b9-b35f-428c3a36fdf2",
-      "name": "Mystic",
-      "email": "akshat.00614802719@cse.mait.ac.in"
+      "id": "8109f610-2dc8-4415-97ff-1e41206dae06",
+      "name": "Disha",
+      "email": "disha2.bhardwaj@gmail.com"
     },
     {
-      "id": "8109f610-2dc8-4415-97ff-1e41206dae06",
-      "name": "Disha B",
-      "email": "disha2.bhardwaj@gmail.com"
+      "id": "6363e66b-5f25-4402-93f8-2ef52ce1b2eb",
+      "name": "Akshat",
+      "email": "akshatbatra10@gmail.com"
+    },
+    {
+      "id": "8f705749-0f66-4853-8609-d887cede5758",
+      "name": "Mystic",
+      "email": "akshatbatraprofessional@outlook.com"
     }
   ]
 }
